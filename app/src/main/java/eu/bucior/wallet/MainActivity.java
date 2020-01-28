@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton floatingActionButton = findViewById(R.id.floating_action_button);
+        FloatingActionButton floatingActionButton = findViewById(R.id.fabNewOperation);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
