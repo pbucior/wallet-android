@@ -1,5 +1,7 @@
 package eu.bucior.wallet.util;
 
+import java.util.StringJoiner;
+
 public class Util {
 
     public static final int DATABASE_VERSION = 1;
@@ -12,4 +14,17 @@ public class Util {
     public static final String KEY_AMOUNT = "amount";
     public static final String KEY_DESCRIPTION = "description";
     public static final String KEY_POSTING_KEY = "posting_key";
+
+
+    public static String formatDate(int y, int m, int d) {
+        String year  = String.format("%04d", y);
+        String month  = String.format("%02d", m);
+        String day  = String.format("%02d", d);
+
+        StringJoiner joiner = new StringJoiner("-");
+        joiner.add(year).add(month).add(day);
+        String date = joiner.toString();
+
+        return date;
+    }
 }
