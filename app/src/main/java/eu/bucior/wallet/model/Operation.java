@@ -2,13 +2,13 @@ package eu.bucior.wallet.model;
 
 public class Operation {
     private int id;
-    private int dateAdded;
+    private Long dateAdded;
     private String dateOperation;
     private double amount;
     private String description;
     private String postingKey;
 
-    public Operation(int dateAdded, String dateOperation, double amount, String description, String postingKey) {
+    public Operation(Long dateAdded, String dateOperation, double amount, String description, String postingKey) {
         this.dateAdded = dateAdded;
         this.dateOperation = dateOperation;
         this.amount = amount;
@@ -20,7 +20,7 @@ public class Operation {
 
     }
 
-    public Operation(int id, int dateAdded, String dateOperation, double amount, String description, String postingKey) {
+    public Operation(int id, Long dateAdded, String dateOperation, double amount, String description, String postingKey) {
         this.id = id;
         this.dateAdded = dateAdded;
         this.dateOperation = dateOperation;
@@ -37,11 +37,11 @@ public class Operation {
         this.id = id;
     }
 
-    public int getDateAdded() {
+    public Long getDateAdded() {
         return dateAdded;
     }
 
-    public void setDateAdded(int dateAdded) {
+    public void setDateAdded(Long dateAdded) {
         this.dateAdded = dateAdded;
     }
 
